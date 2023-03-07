@@ -20,9 +20,12 @@ main {
 }
 
 #mobilemenu {
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+  gap: 199px;
 }
 
 #welcome {
@@ -32,12 +35,73 @@ main {
   color: #28352f;
 }
 
-#menu {
-  border-radius: 8px;
-  padding: 0.5em;
+.menu {
+  width: 1.125rem;
+  height: 1.938rem;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--pColor);
+  margin-top: 6px;
+  transform-origin: 0 100%;
+  transition: all 300ms;
+}
+
+.menu.active .menu-bar1:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.menu.active .menu-bar2:nth-child(2) {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+.menu.active .menu-bar3:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -3px);
+}
+
+.nav-bar {
+  position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  left: -100%;
+  top: 0;
+  background: #fff;
+  min-width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  padding: 20px 221px 0 0;
+}
+
+.nav-bar.active {
+  left: 0;
+}
+
+.nav-item {
+  transition: 0.7s ease;
+  margin: 16px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
+.nav-item:hover {
+  color: var(--sColor);
 }
 
 #menudkt {
@@ -514,7 +578,9 @@ main {
   align-items: center;
   gap: 58px;
   padding: 4em 0;
-  background-image: url("../Style/about-me/About-me-mobile1.svg"), url("../Style/about-me/About-me-mobile2.svg");
+  background-image:
+    url("../Style/about-me/About-me-mobile1.svg"),
+    url("../Style/about-me/About-me-mobile2.svg");
   background-repeat: no-repeat;
   background-position: top 21rem left, top right;
 }
@@ -709,7 +775,9 @@ main {
   #about-me {
     padding: 5rem 0;
     gap: 4rem;
-    background-image: url("../Style/about-me/Ilustracion-1.svg"), url("../Style/about-me/ilustracion-2.svg");
+    background-image:
+      url("../Style/about-me/Ilustracion-1.svg"),
+      url("../Style/about-me/ilustracion-2.svg");
     background-repeat: no-repeat;
     background-position: top 12rem left, top right;
     height: 45rem;
@@ -885,9 +953,15 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 0;
-    background-image: url("../Style/Forms/Ilustration-1-form.svg"), url("../Style/Forms/ilustration-2-form.svg"), url("../Style/Forms/Ilustration-3-form.svg");
+    background-image:
+      url("../Style/Forms/Ilustration-1-form.svg"),
+      url("../Style/Forms/ilustration-2-form.svg"),
+      url("../Style/Forms/Ilustration-3-form.svg");
     background-repeat: no-repeat;
-    background-position: bottom 0 right 0, bottom 8rem left 20rem, bottom 0 left 0;
+    background-position:
+      bottom 0 right 0,
+      bottom 8rem left 20rem,
+      bottom 0 left 0;
   }
 
   #form-main-text {

@@ -1,482 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is a portfolio of a fullstack web developer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Danfall Portfolio</title>
-    <link rel="stylesheet" href="Style/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav id="navigation">
-        <div id="mobilemenu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a portfolio of a fullstack web developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <title>Danfall Portfolio</title>
+  <link rel="stylesheet" href="Style/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav id="navigation">
+      <div id="mobilemenu">
+        <a class="a-header" href="#">
           <p id="welcome">Welcome</p>
-          <img
-            id="menu"
-            class="menu-icon"
-            src="Style/icons/menu.svg"
-            alt="menu-icon"
-          />
-        </div>
-        <div id="menudkt">
-          <ul class="menudkt-list">
+        </a>
+        <div class="nav-bar">
+          <ul class="nav-list">
             <li>
               <a class="a-header" href="#recentworks">
-                <p class="txt-menudkt">Portfolio</p>
+                <p class="nav-item">Portfolio</p>
               </a>
             </li>
             <li>
               <a class="a-header" href="#about-me">
-                <p class="txt-menudkt">About</p>
+                <p class="nav-item">About</p>
               </a>
             </li>
             <li>
               <a class="a-header" href="#form-section">
-                <p class="txt-menudkt">Contact</p>
+                <p class="nav-item">Contact</p>
               </a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
+        <div class="menu">
+          <span class="menu-bar1"></span>
+          <span class="menu-bar2"></span>
+          <span class="menu-bar3"></span>
+        </div>
+      </div>
+      <div id="menudkt">
+        <ul class="menudkt-list">
+          <li>
+            <a class="a-header" href="#recentworks">
+              <p class="txt-menudkt">Portfolio</p>
+            </a>
+          </li>
+          <li>
+            <a class="a-header" href="#about-me">
+              <p class="txt-menudkt">About</p>
+            </a>
+          </li>
+          <li>
+            <a class="a-header" href="#form-section">
+              <p class="txt-menudkt">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section id="headline">
-        <h1 class="primary">
-          Hey there. I’m Daniel<br />
-          <span class="secondary">I’m a software developer</span>
-        </h1>
+  <main>
+    <section id="headline">
+      <h1 class="primary">
+        Hey there. I’m Daniel<br />
+        <span class="secondary">I’m a software developer</span>
+      </h1>
+      <p class="supportingtxt">
+        I can help you build a product , feature or website, Look through some
+        of my work and experience! If you like what you see and have a project
+        you need coded, don’t hestiate to contact me.
+      </p>
+      <div id="social-cont">
+        <ul id="social-media-icons">
+          <li>
+            <a href="https://twitter.com/Danfall369" target="_blank" rel="noopener"><img id="twitter" class="media-icon"
+                src="Style/Social Media Icons/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/daniel-falcon-009932263/" target="_blank" rel="noopener"><img
+                id="linkedin" class="media-icon" src="Style/Social Media Icons/Linkedin icon.svg" alt="Linkedin" /></a>
+          </li>
+          <li>
+            <a href="#" rel="noopener"><img id="medium" class="media-icon" src="Style/Social Media Icons/medium.svg"
+                alt="medium" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Danfall369" target="_blank" rel="noopener"><img id="github" class="media-icon"
+                src="Style/Social Media Icons/github.svg" alt="github" /></a>
+          </li>
+          <li>
+            <a href="#" rel="noopener"><img id="angellist" class="media-icon"
+                src="Style/Social Media Icons/angellist.svg" alt="angellist" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="arrow">
+        <a href="#recentworks"><img class="arrow-icon" src="Style/icons/Union.svg" alt="arrow-down" /></a>
+      </div>
+    </section>
+
+    <section id="recentworks">
+      <div class="maintxt">
+        <h2 class="primary">My Recent Works</h2>
+        <div class="indicator"></div>
+      </div>
+      <div id="grid-boxs">
+        <div class="project-box1">
+          <div class="info-box">
+            <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
+            <div class="tags-list">
+              <div id="info-box-tags">
+                <ul id="info-tags">
+                  <li class="big-tag">Ruby on rails</li>
+                  <li class="small-tag">CSS</li>
+                  <li class="medium-tag">JavaScrip</li>
+                  <li class="small-tag">Html</li>
+                </ul>
+              </div>
+            </div>
+            <div class="action">
+              <button class="small-buttom" type="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-box2">
+          <div class="info-box">
+            <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
+            <div class="tags-list">
+              <div id="info-box-tags">
+                <ul id="info-tags">
+                  <li class="big-tag">Ruby on rails</li>
+                  <li class="small-tag">CSS</li>
+                  <li class="medium-tag">JavaScrip</li>
+                  <li class="small-tag">Html</li>
+                </ul>
+              </div>
+            </div>
+            <div class="action">
+              <button class="small-buttom" type="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-box3">
+          <div class="info-box">
+            <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
+            <div class="tags-list">
+              <div id="info-box-tags">
+                <ul id="info-tags">
+                  <li class="big-tag">Ruby on rails</li>
+                  <li class="small-tag">CSS</li>
+                  <li class="medium-tag">JavaScrip</li>
+                  <li class="small-tag">Html</li>
+                </ul>
+              </div>
+            </div>
+            <div class="action">
+              <button class="small-buttom" type="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-box4">
+          <div class="info-box">
+            <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
+            <div class="tags-list">
+              <div id="info-box-tags">
+                <ul id="info-tags">
+                  <li class="big-tag">Ruby on rails</li>
+                  <li class="small-tag">CSS</li>
+                  <li class="medium-tag">JavaScrip</li>
+                  <li class="small-tag">Html</li>
+                </ul>
+              </div>
+            </div>
+            <div class="action">
+              <button class="small-buttom" type="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-box5">
+          <div class="info-box">
+            <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
+            <div class="tags-list">
+              <div id="info-box-tags">
+                <ul id="info-tags">
+                  <li class="big-tag">Ruby on rails</li>
+                  <li class="small-tag">CSS</li>
+                  <li class="medium-tag">JavaScrip</li>
+                  <li class="small-tag">Html</li>
+                </ul>
+              </div>
+            </div>
+            <div class="action">
+              <button class="small-buttom" type="button">See project</button>
+            </div>
+          </div>
+        </div>
+        <div class="project-box6">
+          <div class="info-box">
+            <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
+            <div class="tags-list">
+              <div id="info-box-tags">
+                <ul id="info-tags">
+                  <li class="big-tag">Ruby on rails</li>
+                  <li class="small-tag">CSS</li>
+                  <li class="medium-tag">JavaScrip</li>
+                  <li class="small-tag">Html</li>
+                </ul>
+              </div>
+            </div>
+            <div class="action">
+              <button class="small-buttom" type="button">See project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me">
+      <div id="aboutmetxt">
+        <h2 class="primary">About me</h2>
         <p class="supportingtxt">
-          I can help you build a product , feature or website, Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
+          I can help you build a product , feature or website Look through
+          some of my work and experience! If you like what you see and have a
+          project you need coded, don’t hestiate to contact me.
         </p>
-        <div id="social-cont">
+        <button class="big-buttom" type="button">Get My Resume</button>
+      </div>
+      <div id="grid-about">
+        <div class="languages">
+          <div class="icon-cont">
+            <div class="icon-box">
+              <img src="Style/about-me/icon-languages.svg" alt="" />
+            </div>
+          </div>
+          <div class="titles-tags">
+            <h3 class="abt-h3">Languages</h3>
+            <div class="tags-lists-abt">
+              <ul class="tags-abt">
+                <li class="medium-abt">JavaScrip</li>
+                <li class="small-abt">Ruby</li>
+                <li class="small-abt">Html</li>
+                <li class="small-abt">CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="frameworks">
+          <div class="icon-cont">
+            <div class="icon-box">
+              <img src="Style/about-me/icon-frameworks.svg" alt="" />
+            </div>
+          </div>
+          <div class="titles-tags">
+            <h3 class="abt-h3">Frameworks</h3>
+            <div class="tags-lists-abt">
+              <ul class="tags-abt">
+                <li class="medium-abt">Bootstap</li>
+                <li class="big-abt">Ruby on rails</li>
+                <li class="small-abt">Rspec</li>
+                <li class="medium-abt">Capybara</li>
+                <li class="medium-abt">Selenium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="icon-cont">
+            <div class="icon-box">
+              <img src="Style/about-me/icon-skills.svg" alt="" />
+            </div>
+          </div>
+          <div class="titles-tags">
+            <h3 class="abt-h3">Skills</h3>
+            <div class="tags-lists-abt">
+              <ul class="tags-abt">
+                <li class="medium-abt">Codekit</li>
+                <li class="medium-abt">GitHub</li>
+                <li class="medium-abt">Codepen</li>
+                <li class="medium-abt">Gitlab</li>
+                <li class="medium-abt">Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <div class="text-form">
+        <p id="form-main-text">
+          I'm always interested in hearing about new projects, so if you'd
+          like to chat please get in touch.
+        </p>
+      </div>
+      <div class="forms">
+        <form action="https://formspree.io/f/xzbqrany" method="post">
+          <fieldset id="forms-fields">
+            <input class="name-field" type="text" placeholder="Full name" maxlength="30" required name="Name Field" />
+            <input class="email-field" type="email" placeholder="Email address" required name="Email Field" />
+            <textarea name="text-field" class="text-field" cols="30" rows="10" maxlength="500"
+              placeholder="Enter text here" required></textarea>
+            <button class="big-buttom" type="submit">Get in touch</button>
+          </fieldset>
+        </form>
+        <div id="social-cont-form">
           <ul id="social-media-icons">
             <li>
-              <a
-                href="https://twitter.com/Danfall369"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  id="twitter"
-                  class="media-icon"
-                  src="Style/Social Media Icons/twitter.svg"
-                  alt="twitter"
-              /></a>
+              <a href="https://twitter.com/Danfall369" target="_blank" rel="noopener"><img id="twitter"
+                  class="media-icon" src="Style/Social Media Icons/twitter.svg" alt="twitter" /></a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/daniel-falcon-009932263/"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  id="linkedin"
-                  class="media-icon"
-                  src="Style/Social Media Icons/Linkedin icon.svg"
-                  alt="Linkedin"
-              /></a>
+              <a href="https://www.linkedin.com/in/daniel-falcon-009932263/" target="_blank" rel="noopener"><img
+                  id="linkedin" class="media-icon" src="Style/Social Media Icons/Linkedin icon.svg"
+                  alt="Linkedin" /></a>
             </li>
             <li>
-              <a href="#" rel="noopener"
-                ><img
-                  id="medium"
-                  class="media-icon"
-                  src="Style/Social Media Icons/medium.svg"
-                  alt="medium"
-              /></a>
+              <a href="#" rel="noopener"><img id="medium" class="media-icon" src="Style/Social Media Icons/medium.svg"
+                  alt="medium" /></a>
             </li>
             <li>
-              <a
-                href="https://github.com/Danfall369"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  id="github"
-                  class="media-icon"
-                  src="Style/Social Media Icons/github.svg"
-                  alt="github"
-              /></a>
+              <a href="https://github.com/Danfall369" target="_blank" rel="noopener"><img id="github" class="media-icon"
+                  src="Style/Social Media Icons/github.svg" alt="github" /></a>
             </li>
             <li>
-              <a href="#" rel="noopener"
-                ><img
-                  id="angellist"
-                  class="media-icon"
-                  src="Style/Social Media Icons/angellist.svg"
-                  alt="angellist"
-              /></a>
+              <a href="#" rel="noopener"><img id="angellist" class="media-icon"
+                  src="Style/Social Media Icons/angellist.svg" alt="angellist" /></a>
             </li>
           </ul>
         </div>
-        <div class="arrow">
-          <a href="#recentworks"
-            ><img
-              class="arrow-icon"
-              src="Style/icons/Union.svg"
-              alt="arrow-down"
-          /></a>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="recentworks">
-        <div class="maintxt">
-          <h2 class="primary">My Recent Works</h2>
-          <div class="indicator"></div>
-        </div>
-        <div id="grid-boxs">
-          <div class="project-box1">
-            <div class="info-box">
-              <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
-              <div class="tags-list">
-                <div id="info-box-tags">
-                  <ul id="info-tags">
-                    <li class="big-tag">Ruby on rails</li>
-                    <li class="small-tag">CSS</li>
-                    <li class="medium-tag">JavaScrip</li>
-                    <li class="small-tag">Html</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="action">
-                <button class="small-buttom" type="button">See project</button>
-              </div>
-            </div>
-          </div>
-          <div class="project-box2">
-            <div class="info-box">
-              <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
-              <div class="tags-list">
-                <div id="info-box-tags">
-                  <ul id="info-tags">
-                    <li class="big-tag">Ruby on rails</li>
-                    <li class="small-tag">CSS</li>
-                    <li class="medium-tag">JavaScrip</li>
-                    <li class="small-tag">Html</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="action">
-                <button class="small-buttom" type="button">See project</button>
-              </div>
-            </div>
-          </div>
-          <div class="project-box3">
-            <div class="info-box">
-              <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
-              <div class="tags-list">
-                <div id="info-box-tags">
-                  <ul id="info-tags">
-                    <li class="big-tag">Ruby on rails</li>
-                    <li class="small-tag">CSS</li>
-                    <li class="medium-tag">JavaScrip</li>
-                    <li class="small-tag">Html</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="action">
-                <button class="small-buttom" type="button">See project</button>
-              </div>
-            </div>
-          </div>
-          <div class="project-box4">
-            <div class="info-box">
-              <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
-              <div class="tags-list">
-                <div id="info-box-tags">
-                  <ul id="info-tags">
-                    <li class="big-tag">Ruby on rails</li>
-                    <li class="small-tag">CSS</li>
-                    <li class="medium-tag">JavaScrip</li>
-                    <li class="small-tag">Html</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="action">
-                <button class="small-buttom" type="button">See project</button>
-              </div>
-            </div>
-          </div>
-          <div class="project-box5">
-            <div class="info-box">
-              <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
-              <div class="tags-list">
-                <div id="info-box-tags">
-                  <ul id="info-tags">
-                    <li class="big-tag">Ruby on rails</li>
-                    <li class="small-tag">CSS</li>
-                    <li class="medium-tag">JavaScrip</li>
-                    <li class="small-tag">Html</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="action">
-                <button class="small-buttom" type="button">See project</button>
-              </div>
-            </div>
-          </div>
-          <div class="project-box6">
-            <div class="info-box">
-              <h3 class="box-name">Multi-Post Stories Gain+Glory</h3>
-              <div class="tags-list">
-                <div id="info-box-tags">
-                  <ul id="info-tags">
-                    <li class="big-tag">Ruby on rails</li>
-                    <li class="small-tag">CSS</li>
-                    <li class="medium-tag">JavaScrip</li>
-                    <li class="small-tag">Html</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="action">
-                <button class="small-buttom" type="button">See project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <footer id="footer">
+      <h2 id="footer-text">Falcon-vargas@Hotmail.com</h2>
+      <div id="social-cont-footer">
+        <ul id="social-media-icons">
+          <li>
+            <a href="https://twitter.com/Danfall369" target="_blank" rel="noopener"><img id="twitter" class="media-icon"
+                src="Style/Social Media Icons/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/daniel-falcon-009932263/" target="_blank" rel="noopener"><img
+                id="linkedin" class="media-icon" src="Style/Social Media Icons/Linkedin icon.svg" alt="Linkedin" /></a>
+          </li>
+          <li>
+            <a href="#" rel="noopener"><img id="medium" class="media-icon" src="Style/Social Media Icons/medium.svg"
+                alt="medium" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Danfall369" target="_blank" rel="noopener"><img id="github" class="media-icon"
+                src="Style/Social Media Icons/github.svg" alt="github" /></a>
+          </li>
+          <li>
+            <a href="#" rel="noopener"><img id="angellist" class="media-icon"
+                src="Style/Social Media Icons/angellist.svg" alt="angellist" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <script src="js/menu.js"></script>
+</body>
 
-      <section id="about-me">
-        <div id="aboutmetxt">
-          <h2 class="primary">About me</h2>
-          <p class="supportingtxt">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
-          <button class="big-buttom" type="button">Get My Resume</button>
-        </div>
-        <div id="grid-about">
-          <div class="languages">
-            <div class="icon-cont">
-              <div class="icon-box">
-                <img src="Style/about-me/icon-languages.svg" alt="" />
-              </div>
-            </div>
-            <div class="titles-tags">
-              <h3 class="abt-h3">Languages</h3>
-              <div class="tags-lists-abt">
-                <ul class="tags-abt">
-                  <li class="medium-abt">JavaScrip</li>
-                  <li class="small-abt">Ruby</li>
-                  <li class="small-abt">Html</li>
-                  <li class="small-abt">CSS</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="frameworks">
-            <div class="icon-cont">
-              <div class="icon-box">
-                <img src="Style/about-me/icon-frameworks.svg" alt="" />
-              </div>
-            </div>
-            <div class="titles-tags">
-              <h3 class="abt-h3">Frameworks</h3>
-              <div class="tags-lists-abt">
-                <ul class="tags-abt">
-                  <li class="medium-abt">Bootstap</li>
-                  <li class="big-abt">Ruby on rails</li>
-                  <li class="small-abt">Rspec</li>
-                  <li class="medium-abt">Capybara</li>
-                  <li class="medium-abt">Selenium</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="skills">
-            <div class="icon-cont">
-              <div class="icon-box">
-                <img src="Style/about-me/icon-skills.svg" alt="" />
-              </div>
-            </div>
-            <div class="titles-tags">
-              <h3 class="abt-h3">Skills</h3>
-              <div class="tags-lists-abt">
-                <ul class="tags-abt">
-                  <li class="medium-abt">Codekit</li>
-                  <li class="medium-abt">GitHub</li>
-                  <li class="medium-abt">Codepen</li>
-                  <li class="medium-abt">Gitlab</li>
-                  <li class="medium-abt">Terminal</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="form-section">
-        <div class="text-form">
-          <p id="form-main-text">
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </p>
-        </div>
-        <div class="forms">
-          <form action="https://formspree.io/f/xzbqrany" method="post">
-            <fieldset id="forms-fields">
-              <input
-                class="name-field"
-                type="text"
-                placeholder="Full name"
-                maxlength="30"
-                required
-                name="Name Field"
-              />
-              <input
-                class="email-field"
-                type="email"
-                placeholder="Email address"
-                required
-                name="Email Field"
-              />
-              <textarea
-                name="text-field"
-                class="text-field"
-                cols="30"
-                rows="10"
-                maxlength="500"
-                placeholder="Enter text here"
-                required
-              ></textarea>
-              <button class="big-buttom" type="submit">Get in touch</button>
-            </fieldset>
-          </form>
-          <div id="social-cont-form">
-            <ul id="social-media-icons">
-              <li>
-                <a
-                  href="https://twitter.com/Danfall369"
-                  target="_blank"
-                  rel="noopener"
-                  ><img
-                    id="twitter"
-                    class="media-icon"
-                    src="Style/Social Media Icons/twitter.svg"
-                    alt="twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/daniel-falcon-009932263/"
-                  target="_blank"
-                  rel="noopener"
-                  ><img
-                    id="linkedin"
-                    class="media-icon"
-                    src="Style/Social Media Icons/Linkedin icon.svg"
-                    alt="Linkedin"
-                /></a>
-              </li>
-              <li>
-                <a href="#" rel="noopener"
-                  ><img
-                    id="medium"
-                    class="media-icon"
-                    src="Style/Social Media Icons/medium.svg"
-                    alt="medium"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Danfall369"
-                  target="_blank"
-                  rel="noopener"
-                  ><img
-                    id="github"
-                    class="media-icon"
-                    src="Style/Social Media Icons/github.svg"
-                    alt="github"
-                /></a>
-              </li>
-              <li>
-                <a href="#" rel="noopener"
-                  ><img
-                    id="angellist"
-                    class="media-icon"
-                    src="Style/Social Media Icons/angellist.svg"
-                    alt="angellist"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <footer id="footer">
-        <h2 id="footer-text">Falcon-vargas@Hotmail.com</h2>
-        <div id="social-cont-footer">
-          <ul id="social-media-icons">
-            <li>
-              <a
-                href="https://twitter.com/Danfall369"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  id="twitter"
-                  class="media-icon"
-                  src="Style/Social Media Icons/twitter.svg"
-                  alt="twitter"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/daniel-falcon-009932263/"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  id="linkedin"
-                  class="media-icon"
-                  src="Style/Social Media Icons/Linkedin icon.svg"
-                  alt="Linkedin"
-              /></a>
-            </li>
-            <li>
-              <a href="#" rel="noopener"
-                ><img
-                  id="medium"
-                  class="media-icon"
-                  src="Style/Social Media Icons/medium.svg"
-                  alt="medium"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Danfall369"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  id="github"
-                  class="media-icon"
-                  src="Style/Social Media Icons/github.svg"
-                  alt="github"
-              /></a>
-            </li>
-            <li>
-              <a href="#" rel="noopener"
-                ><img
-                  id="angellist"
-                  class="media-icon"
-                  src="Style/Social Media Icons/angellist.svg"
-                  alt="angellist"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </main>
-  </body>
 </html>
