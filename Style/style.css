@@ -46,7 +46,7 @@ main {
   height: 2px;
   background: var(--pColor);
   margin-top: 6px;
-  transform-origin: 0px 100%;
+  transform-origin: 0 100%;
   transition: all 300ms;
 }
 
@@ -69,7 +69,7 @@ main {
   flex-direction: column;
   align-items: center;
   left: -100%;
-  top: 0px;
+  top: 0;
   background: #fff;
   min-width: 100vw;
   min-height: 100vh;
@@ -81,7 +81,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 221px 0px 0px;
+  padding: 20px 221px 0 0;
 }
 
 .nav-bar.active {
@@ -98,6 +98,7 @@ main {
   line-height: 44px;
   color: #3a4a42;
 }
+
 .nav-item:hover {
   color: var(--sColor);
 }
@@ -576,7 +577,8 @@ main {
   align-items: center;
   gap: 58px;
   padding: 4em 0;
-  background-image: url("../Style/about-me/About-me-mobile1.svg"),
+  background-image:
+    url("../Style/about-me/About-me-mobile1.svg"),
     url("../Style/about-me/About-me-mobile2.svg");
   background-repeat: no-repeat;
   background-position: top 21rem left, top right;
@@ -772,7 +774,8 @@ main {
   #about-me {
     padding: 5rem 0;
     gap: 4rem;
-    background-image: url("../Style/about-me/Ilustracion-1.svg"),
+    background-image:
+      url("../Style/about-me/Ilustracion-1.svg"),
       url("../Style/about-me/ilustracion-2.svg");
     background-repeat: no-repeat;
     background-position: top 12rem left, top right;
@@ -949,11 +952,14 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 0;
-    background-image: url("../Style/Forms/Ilustration-1-form.svg"),
+    background-image:
+      url("../Style/Forms/Ilustration-1-form.svg"),
       url("../Style/Forms/ilustration-2-form.svg"),
       url("../Style/Forms/Ilustration-3-form.svg");
     background-repeat: no-repeat;
-    background-position: bottom 0 right 0, bottom 8rem left 20rem,
+    background-position:
+      bottom 0 right 0,
+      bottom 8rem left 20rem,
       bottom 0 left 0;
   }
 
