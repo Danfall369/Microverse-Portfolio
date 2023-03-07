@@ -132,6 +132,10 @@ You can deploy this project using:
 - GitHub: [imberbesi](https://github.com/imberbesi)
 - Gmail: (jlberbessi@gmail.com)
 
+👤 **Alejandro Velasquez**
+
+- GitHub: [imberbesi](https://github.com/VelzckC0D3)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
