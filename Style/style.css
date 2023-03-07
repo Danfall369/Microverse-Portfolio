@@ -15,6 +15,10 @@ html {
   border: none;
 }
 
+main {
+  padding-top: 2rem;
+}
+
 #mobilemenu {
   position: fixed;
   display: flex;
