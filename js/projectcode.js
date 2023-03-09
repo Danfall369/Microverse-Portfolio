@@ -94,6 +94,7 @@ const cards = () => {
     </div>
       `;
     gridBox.append(projectBox);
+    return gridBox;
   });
 };
 cards();
