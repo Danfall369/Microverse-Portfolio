@@ -733,7 +733,7 @@ main {
   }
 
   .info-box-tags {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .left-block {
@@ -774,7 +774,8 @@ main {
   align-items: center;
   gap: 58px;
   padding: 4em 0;
-  background-image: url("../Style/about-me/About-me-mobile1.svg"),
+  background-image:
+    url("../Style/about-me/About-me-mobile1.svg"),
     url("../Style/about-me/About-me-mobile2.svg");
   background-repeat: no-repeat;
   background-position: top 21rem left, top right;
@@ -971,7 +972,8 @@ main {
   #about-me {
     padding: 5rem 0;
     gap: 4rem;
-    background-image: url("../Style/about-me/Ilustracion-1.svg"),
+    background-image:
+      url("../Style/about-me/Ilustracion-1.svg"),
       url("../Style/about-me/ilustracion-2.svg");
     background-repeat: no-repeat;
     background-position: top 12rem left, top right;
@@ -1148,11 +1150,14 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 0;
-    background-image: url("../Style/Forms/Ilustration-1-form.svg"),
+    background-image:
+      url("../Style/Forms/Ilustration-1-form.svg"),
       url("../Style/Forms/ilustration-2-form.svg"),
       url("../Style/Forms/Ilustration-3-form.svg");
     background-repeat: no-repeat;
-    background-position: bottom 0 right 0, bottom 8rem left 20rem,
+    background-position:
+      bottom 0 right 0,
+      bottom 8rem left 20rem,
       bottom 0 left 0;
   }
 
