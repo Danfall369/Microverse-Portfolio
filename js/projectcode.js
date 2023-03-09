@@ -107,8 +107,8 @@ section.innerHTML = `
 <div class="card-works">
 <div class="img-portfolio">
   <button class="x-button" type="button">x</button>
-  <img class="img-mobile" src="../Style/Detail-mobile/Snapshoot-Portfolio.svg" alt="Snapshoot">
-  <img class="img-desk" src="../Style/Detail-mobile/Snapshoot-Dsk.svg" alt="Snapshoot">
+  <img class="img-mobile" src="./Style/Detail-mobile/Snapshoot-Portfolio.svg" alt="Snapshoot">
+  <img class="img-desk" src="./Style/Detail-mobile/Snapshoot-Dsk.svg" alt="Snapshoot">
 </div>
 <div class="primary-text">
   <div class="project-name">
@@ -134,11 +134,11 @@ section.innerHTML = `
 <div class="actions">
   <div class="greenbb">
     <a href="https://danfall369.github.io/Microverse-Portfolio/" target="_blank"><button class="a-btn" type="button">See Live <img class="btn-img"
-        src="../Style/Detail-mobile/ext-ico.svg" alt="ext-ico"></button></a>
+        src="./Style/Detail-mobile/ext-ico.svg" alt="ext-ico"></button></a>
   </div>
   <div class="greenbb">
     <a href="https://github.com/Danfall369/Microverse-Portfolio" target="_blank"><button class="a-btn" type="button">See Source <img class="btn-img"
-        src="../Style/Detail-mobile/GitHub.svg" alt="ext-ico"></button></a>
+        src="./Style/Detail-mobile/GitHub.svg" alt="ext-ico"></button></a>
   </div>
 </div>
 </div>
