@@ -438,8 +438,8 @@ main {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  top: 0px;
-  border-radius: 0px;
+  top: 0;
+  border-radius: 0;
   background: #c1c7d0;
   transition: 200ms ease-in-out;
   overflow-y: scroll;
@@ -456,7 +456,7 @@ main {
   gap: 0.5rem;
   width: 22rem;
   height: 52rem;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1rem;
   transform: translate(37px, 10px);
@@ -478,7 +478,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 0.75rem;
   width: 16rem;
   height: 11rem;
@@ -488,7 +488,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 0.75rem;
   width: 16rem;
   height: 8.4rem;
@@ -506,7 +506,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 0.5rem;
   width: 15.3rem;
   height: 2rem;
@@ -568,7 +568,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 0.75rem;
   width: 19.4rem;
   height: 19.5rem;
@@ -577,7 +577,7 @@ main {
 .ptext {
   width: 19.4rem;
   height: 19.5rem;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -612,7 +612,7 @@ main {
   letter-spacing: 0.03em;
   margin: 0.75rem;
   background: none;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -666,7 +666,7 @@ main {
     gap: 0.5rem;
     width: 57.5rem;
     height: 65rem;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 1rem;
     transform: translate(150px, 25px);
@@ -694,7 +694,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 0.75rem;
     width: 37rem;
     height: 6rem;
@@ -713,17 +713,17 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 0.75rem;
     width: 54.75rem;
     height: 9.5rem;
-    transform: translate(0rem, 2rem);
+    transform: translate(0, 2rem);
   }
 
   .ptext {
     width: 54.75rem;
     height: 9.5rem;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -747,7 +747,8 @@ main {
   align-items: center;
   gap: 58px;
   padding: 4em 0;
-  background-image: url("../Style/about-me/About-me-mobile1.svg"),
+  background-image:
+    url("../Style/about-me/About-me-mobile1.svg"),
     url("../Style/about-me/About-me-mobile2.svg");
   background-repeat: no-repeat;
   background-position: top 21rem left, top right;
@@ -944,7 +945,8 @@ main {
   #about-me {
     padding: 5rem 0;
     gap: 4rem;
-    background-image: url("../Style/about-me/Ilustracion-1.svg"),
+    background-image:
+      url("../Style/about-me/Ilustracion-1.svg"),
       url("../Style/about-me/ilustracion-2.svg");
     background-repeat: no-repeat;
     background-position: top 12rem left, top right;
@@ -1121,11 +1123,14 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 0;
-    background-image: url("../Style/Forms/Ilustration-1-form.svg"),
+    background-image:
+      url("../Style/Forms/Ilustration-1-form.svg"),
       url("../Style/Forms/ilustration-2-form.svg"),
       url("../Style/Forms/Ilustration-3-form.svg");
     background-repeat: no-repeat;
-    background-position: bottom 0 right 0, bottom 8rem left 20rem,
+    background-position:
+      bottom 0 right 0,
+      bottom 8rem left 20rem,
       bottom 0 left 0;
   }
 

@@ -1,3 +1,17 @@
+// Hamburger menu
+const hamburger = document.querySelector('.menu');
+const navMenu = document.querySelector('.nav-bar');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
+
 // Object Array
 const projectCards = [{
   featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
@@ -82,7 +96,7 @@ const cards = () => {
     gridBox.append(projectBox);
   });
 };
-cards()
+cards();
 
 // PopUP menu
 const popUp = document.querySelector('.detail-mobile');
@@ -118,12 +132,12 @@ section.innerHTML = `
 </div>
 <div class="actions">
   <div class="greenbb">
-    <a href="https://danfall369.github.io/Microverse-Portfolio/" class="a-btn" target="_blank">See Live <img class="btn-img"
-        src="/Style/Detail-mobile/ext-ico.svg" alt="ext-ico"></a>
+    <a href="https://danfall369.github.io/Microverse-Portfolio/" target="_blank"><button class="a-btn" type="button">See Live <img class="btn-img"
+        src="/Style/Detail-mobile/ext-ico.svg" alt="ext-ico"></button></a>
   </div>
   <div class="greenbb">
-    <a href="https://github.com/Danfall369/Microverse-Portfolio" class="a-btn" target="_blank">See Source <img class="btn-img"
-        src="/Style/Detail-mobile/GitHub.svg" alt="ext-ico"></a>
+    <a href="https://github.com/Danfall369/Microverse-Portfolio" target="_blank"><button class="a-btn" type="button">See Source <img class="btn-img"
+        src="/Style/Detail-mobile/GitHub.svg" alt="ext-ico"></button></a>
   </div>
 </div>
 </div>
