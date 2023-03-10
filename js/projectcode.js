@@ -102,8 +102,8 @@ cards();
 // PopUp Menu
 const popUp = document.querySelector('.detail-mobile');
 const section = document.createElement('div');
-popUp.append(section);
 projectCards.map((dataInfo) => {
+  popUp.append(section);
   section.innerHTML = `
 <div class="card-works">
 <div class="img-portfolio">
@@ -180,33 +180,23 @@ const setSuccess = (element) => {
 };
 
 const isValidEmail = (email) => {
-  const re = /[a-z]/;
-  return re.test(String(email));
+  if (email !== email.toLowerCase()) {
+    return false;
+  }
+  return true;
 };
 
-const isValidName = (username) => {
-  const re = /[a-zA-Z]/;
-  return re.test(String(username));
-};
-
-form.addEventListener('submit', (e) => {
-  const usernameValue = username.value.trim();
+const validateInputs = () => {
   const emailValue = email.value.trim();
 
-  if (usernameValue === '') {
-    setError(username, 'Name is required');
-  } else if (!isValidName(usernameValue)) {
-    setError(username, 'Provide a alphabetic name');
-  } else {
-    setSuccess(username);
-  }
-
-  if (emailValue === '') {
-    setError(email, 'Email required');
-  } else if (!isValidEmail(emailValue)) {
+  if (!isValidEmail(emailValue)) {
     setError(email, 'Provide a lower case email address');
   } else {
     setSuccess(email);
   }
+};
+
+form.addEventListener('submit', (e) => {
+  validateInputs();
   e.preventDefault();
 });
