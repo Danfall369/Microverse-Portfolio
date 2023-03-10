@@ -1071,6 +1071,21 @@ main {
   align-items: center;
 }
 
+.input-control.success input {
+  border-color: blue;
+}
+
+.input-control.error input {
+  border-color: red;
+}
+
+.input-control .error {
+  color: red;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  height: 20px;
+}
+
 .name-field {
   width: 20.438rem;
   height: 3rem;

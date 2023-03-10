@@ -1,4 +1,4 @@
-// Hamburger menu
+/* // Hamburger menu */
 const hamburger = document.querySelector('.menu');
 const navMenu = document.querySelector('.nav-bar');
 
@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-// Object Array
+/* // Object Array */
 const projectCards = [{
   featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
@@ -67,7 +67,7 @@ const projectCards = [{
   linksource: 'https://github.com/Danfall369/Microverse-Portfolio',
 }];
 
-// Dynamics Cards
+/* // Dynamics Cards */
 const gridBox = document.querySelector('#grid-boxs');
 const cards = () => {
   projectCards.map((dataInfo) => {
@@ -99,7 +99,7 @@ const cards = () => {
 };
 cards();
 
-// PopUP menu
+/* // PopUP menu */
 const popUp = document.querySelector('.detail-mobile');
 const section = document.createElement('div');
 popUp.append(section);
@@ -156,4 +156,57 @@ const closePop = document.querySelector('.x-button');
 closePop.addEventListener('click', () => {
   const detail = document.querySelector('.detail-mobile');
   detail.style.display = 'none';
+});
+
+/* Validation Form */
+const form = document.getElementById('form');
+const username = document.getElementById('name-field');
+const email = document.getElementById('email-field');
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
+};
+
+const setSuccess = (element) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
+
+const isValidEmail = (email) => {
+  const re = /[a-z]/;
+  return re.test(String(email));
+};
+
+const validateInputs = () => {
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+
+  if (usernameValue === '') {
+    setError(username, 'Name is required');
+  } else {
+    setSuccess(username);
+  }
+
+  if (emailValue === '') {
+    setError(email, 'Email Required');
+  } else if (!isValidEmail(emailValue)) {
+    setError(email, 'Provide a lower case email address');
+  } else {
+    setSuccess(email);
+  }
+};
+
+form.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  validateInputs();
 });

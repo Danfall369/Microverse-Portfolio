@@ -197,10 +197,18 @@
         </p>
       </div>
       <div class="forms">
-        <form action="https://formspree.io/f/xzbqrany" method="post">
+        <form id="form" action="https://formspree.io/f/xzbqrany" method="post">
           <fieldset id="forms-fields">
-            <input class="name-field" type="text" placeholder="Full name" maxlength="30" required name="Name Field" />
-            <input class="email-field" type="email" placeholder="Email address" required name="Email Field" />
+            <div class="input-control">
+              <input class="name-field" id="name-field" type="text" placeholder="Full name" maxlength="30" required
+                name="Name Field" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <input class="email-field" id="email-field" type="email" placeholder="Email address" required
+                name="Email Field" />
+              <div class="error"></div>
+            </div>
             <textarea name="text-field" class="text-field" cols="30" rows="10" maxlength="500"
               placeholder="Enter text here" required></textarea>
             <button class="big-buttom" type="submit">Get in touch</button>
