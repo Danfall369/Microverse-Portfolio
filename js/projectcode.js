@@ -158,7 +158,6 @@ closePop.addEventListener('click', () => {
 
 // Validation Form
 const form = document.getElementById('form');
-const username = document.getElementById('name-field');
 const email = document.getElementById('email-field');
 
 const setError = (element, message) => {
