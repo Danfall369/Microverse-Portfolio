@@ -1,4 +1,4 @@
-/* // Hamburger menu */
+// Hamburguer Menu
 const hamburger = document.querySelector('.menu');
 const navMenu = document.querySelector('.nav-bar');
 
@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-/* // Object Array */
+//Object Array
 const projectCards = [{
   featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
@@ -67,7 +67,7 @@ const projectCards = [{
   linksource: 'https://github.com/Danfall369/Microverse-Portfolio',
 }];
 
-/* // Dynamics Cards */
+// Dynamic Cards
 const gridBox = document.querySelector('#grid-boxs');
 const cards = () => {
   projectCards.map((dataInfo) => {
@@ -99,7 +99,7 @@ const cards = () => {
 };
 cards();
 
-/* // PopUP menu */
+// PopUp Menu
 const popUp = document.querySelector('.detail-mobile');
 const section = document.createElement('div');
 popUp.append(section);
@@ -158,7 +158,7 @@ closePop.addEventListener('click', () => {
   detail.style.display = 'none';
 });
 
-/* Validation Form */
+// Validation Form
 const form = document.getElementById('form');
 const username = document.getElementById('name-field');
 const email = document.getElementById('email-field');
