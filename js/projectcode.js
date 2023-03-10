@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-//Object Array
+/* //Object Array */
 const projectCards = [{
   featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
