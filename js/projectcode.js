@@ -103,6 +103,7 @@ cards();
 const popUp = document.querySelector('.detail-mobile');
 const section = document.createElement('div');
 popUp.append(section);
+projectCards.map((dataInfo) => {
 section.innerHTML = `
 <div class="card-works">
 <div class="img-portfolio">
@@ -112,37 +113,33 @@ section.innerHTML = `
 </div>
 <div class="primary-text">
   <div class="project-name">
-    <h3 class="primarytxt">Keeping track of hundreds of components</h3>
+    <h3 class="primarytxt">${dataInfo.name[1]}</h3>
   </div>
 </div>
 <div class="info-box-tags">
   <ul class="info-tags">
-    <li class="big-tags">Ruby on rails</li>
-    <li class="small-tags">CSS</li>
-    <li class="medium-tags">JavaScrip</li>
-    <li class="small-tags">Html</li>
+    <li class="big-tags">${dataInfo.tecnologies[0]}</li>
+    <li class="small-tags">${dataInfo.tecnologies[1]}</li>
+    <li class="medium-tags">${dataInfo.tecnologies[2]}</li>
+    <li class="small-tags">${dataInfo.tecnologies[3]}</li>
   </ul>
 </div>
 <div class="left-block">
-  <p class="ptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-    printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text
-    of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
-    relea</p>
+  <p class="ptext">${dataInfo.description}</p>
 </div>
 <div class="actions">
   <div class="greenbb">
-    <a href="https://danfall369.github.io/Microverse-Portfolio/" target="_blank"><button class="a-btn" type="button">See Live <img class="btn-img"
+    <a href="${dataInfo.linklive}" target="_blank"><button class="a-btn" type="button">See Live <img class="btn-img"
         src="./Style/Detail-mobile/ext-ico.svg" alt="ext-ico"></button></a>
   </div>
   <div class="greenbb">
-    <a href="https://github.com/Danfall369/Microverse-Portfolio" target="_blank"><button class="a-btn" type="button">See Source <img class="btn-img"
+    <a href="${dataInfo.linksource}" target="_blank"><button class="a-btn" type="button">See Source <img class="btn-img"
         src="./Style/Detail-mobile/GitHub.svg" alt="ext-ico"></button></a>
   </div>
 </div>
 </div>
 `;
+});
 
 const PopUpbutton = document.querySelectorAll('.small-buttom');
 PopUpbutton.forEach((button) => {
@@ -162,6 +159,7 @@ closePop.addEventListener('click', () => {
 const form = document.getElementById('form');
 const username = document.getElementById('name-field');
 const email = document.getElementById('email-field');
+const btn = document.getElementById('btn-form');
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
@@ -186,27 +184,30 @@ const isValidEmail = (email) => {
   return re.test(String(email));
 };
 
-const validateInputs = () => {
+const isValidName = (username) => {
+  const re = /[a-zA-Z]/;
+  return re.test(String(username));
+};
+
+
+form.addEventListener('submit', (e) => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
 
   if (usernameValue === '') {
     setError(username, 'Name is required');
+  } else if (!isValidName(usernameValue)) {
+    setError(username, 'Provide a alphabetic name');
   } else {
     setSuccess(username);
   }
 
   if (emailValue === '') {
-    setError(email, 'Email Required');
+    setError(email, 'Email required');
   } else if (!isValidEmail(emailValue)) {
     setError(email, 'Provide a lower case email address');
   } else {
     setSuccess(email);
   }
-};
-
-form.addEventListener('click', (e) => {
   e.preventDefault();
-
-  validateInputs();
 });
