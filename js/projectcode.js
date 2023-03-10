@@ -104,7 +104,7 @@ const popUp = document.querySelector('.detail-mobile');
 const section = document.createElement('div');
 popUp.append(section);
 projectCards.map((dataInfo) => {
-section.innerHTML = `
+  section.innerHTML = `
 <div class="card-works">
 <div class="img-portfolio">
   <button class="x-button" type="button">x</button>
@@ -139,6 +139,7 @@ section.innerHTML = `
 </div>
 </div>
 `;
+  return popUp;
 });
 
 const PopUpbutton = document.querySelectorAll('.small-buttom');
@@ -159,7 +160,6 @@ closePop.addEventListener('click', () => {
 const form = document.getElementById('form');
 const username = document.getElementById('name-field');
 const email = document.getElementById('email-field');
-const btn = document.getElementById('btn-form');
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
@@ -188,7 +188,6 @@ const isValidName = (username) => {
   const re = /[a-zA-Z]/;
   return re.test(String(username));
 };
-
 
 form.addEventListener('submit', (e) => {
   const usernameValue = username.value.trim();
