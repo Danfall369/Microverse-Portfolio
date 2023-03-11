@@ -196,6 +196,6 @@ const validateInputs = () => {
 };
 
 form.addEventListener('submit', (e) => {
-  validateInputs();
   e.preventDefault();
+  validateInputs();
 });
