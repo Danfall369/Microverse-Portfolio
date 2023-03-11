@@ -159,43 +159,15 @@ closePop.addEventListener('click', () => {
 // Validation Form
 const form = document.getElementById('form');
 const email = document.getElementById('email-field');
-
-const setError = (element, message) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-
-  errorDisplay.innerText = message;
-  inputControl.classList.add('error');
-  inputControl.classList.remove('success');
-};
-
-const setSuccess = (element) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-
-  errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
-};
-
-const isValidEmail = (email) => {
-  if (email !== email.toLowerCase()) {
-    return false;
-  }
-  return true;
-};
-
-const validateInputs = () => {
-  const emailValue = email.value.trim();
-
-  if (!isValidEmail(emailValue)) {
-    setError(email, 'Provide a lower case email address');
-  } else {
-    setSuccess(email);
-  }
-};
+const message = document.querySelector('.error');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  validateInputs();
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    message.textContent = 'Provide a lower case email address';
+    message.classList.add('error');
+  } else {
+    message.innerHTML = '';
+    message.display.style = '';
+  }
 });
