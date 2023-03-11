@@ -1,4 +1,4 @@
-// Hamburguer Menu
+/* Hamburguer Menu */
 const hamburger = document.querySelector('.menu');
 const navMenu = document.querySelector('.nav-bar');
 
@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-/* //Object Array */
+/* Object Array */
 const projectCards = [{
   featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
@@ -67,7 +67,7 @@ const projectCards = [{
   linksource: 'https://github.com/Danfall369/Microverse-Portfolio',
 }];
 
-// Dynamic Cards
+/* Dynamic Cards */
 const gridBox = document.querySelector('#grid-boxs');
 const cards = () => {
   projectCards.map((dataInfo) => {
@@ -99,7 +99,7 @@ const cards = () => {
 };
 cards();
 
-// PopUp Menu
+/* PopUp Menu */
 const popUp = document.querySelector('.detail-mobile');
 const section = document.createElement('div');
 projectCards.map((dataInfo) => {
@@ -156,7 +156,7 @@ closePop.addEventListener('click', () => {
   detail.style.display = 'none';
 });
 
-// Validation Form
+/* Validation Form */
 const form = document.getElementById('form');
 const email = document.getElementById('email-field');
 const messageEmail = document.querySelector('.error-email');
@@ -171,3 +171,27 @@ form.addEventListener('submit', (e) => {
     messageEmail.display.style = '';
   }
 });
+
+/* Local Storage */
+const userName = form.elements.name;
+const userEmail = form.elements.email;
+const userText = form.elements.text;
+
+const storedData = JSON.parse(localStorage.getItem('formData'));
+if (storedData) {
+  userName.value = storedData.name;
+  userEmail.value = storedData.email;
+  userText.value = storedData.userText;
+}
+
+function saveData() {
+  const formData = {
+    name: userName.value,
+    email: userEmail.value,
+    userText: userText.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+userName.addEventListener('input', saveData);
+userEmail.addEventListener('input', saveData);
+userText.addEventListener('input', saveData);
