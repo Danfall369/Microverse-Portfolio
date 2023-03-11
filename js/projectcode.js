@@ -159,15 +159,15 @@ closePop.addEventListener('click', () => {
 // Validation Form
 const form = document.getElementById('form');
 const email = document.getElementById('email-field');
-const message = document.querySelector('.error');
+const messageEmail = document.querySelector('.error-email');
 
 form.addEventListener('submit', (e) => {
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
-    message.textContent = 'Provide a lower case email address';
-    message.classList.add('error');
+    messageEmail.textContent = 'Provide a lower case email address';
+    messageEmail.classList.add('error');
   } else {
-    message.innerHTML = '';
-    message.display.style = '';
+    messageEmail.innerHTML = '';
+    messageEmail.display.style = '';
   }
 });
