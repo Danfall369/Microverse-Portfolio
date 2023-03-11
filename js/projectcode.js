@@ -14,7 +14,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 
 /* //Object Array */
 const projectCards = [{
-  featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
+  featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   tecnologies: ['Ruby on rails', 'CSS', 'JavaScrip', 'Html'],
@@ -23,7 +23,7 @@ const projectCards = [{
 },
 
 {
-  featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
+  featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   tecnologies: ['Ruby on rails', 'CSS', 'JavaScrip', 'Html'],
@@ -32,7 +32,7 @@ const projectCards = [{
 },
 
 {
-  featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
+  featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   tecnologies: ['Ruby on rails', 'CSS', 'JavaScrip', 'Html'],
@@ -41,7 +41,7 @@ const projectCards = [{
 },
 
 {
-  featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
+  featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   tecnologies: ['Ruby on rails', 'CSS', 'JavaScrip', 'Html'],
@@ -50,7 +50,7 @@ const projectCards = [{
 },
 
 {
-  featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
+  featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   tecnologies: ['Ruby on rails', 'CSS', 'JavaScrip', 'Html'],
@@ -59,7 +59,7 @@ const projectCards = [{
 },
 
 {
-  featuredImg: '/css/Detail-mobile/Snapshoot-Portfolio.svg',
+  featuredImg: ['./Style/Detail-mobile/Snapshoot-Portfolio.svg', './Style/Detail-mobile/Snapshoot-Dsk.svg'],
   name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
   tecnologies: ['Ruby on rails', 'CSS', 'JavaScrip', 'Html'],
@@ -108,8 +108,8 @@ projectCards.map((dataInfo) => {
 <div class="card-works">
 <div class="img-portfolio">
   <button class="x-button" type="button">x</button>
-  <img class="img-mobile" src="./Style/Detail-mobile/Snapshoot-Portfolio.svg" alt="Snapshoot">
-  <img class="img-desk" src="./Style/Detail-mobile/Snapshoot-Dsk.svg" alt="Snapshoot">
+  <img class="img-mobile" src="${dataInfo.featuredImg[0]}" alt="Snapshoot">
+  <img class="img-desk" src="${dataInfo.featuredImg[1]}" alt="Snapshoot">
 </div>
 <div class="primary-text">
   <div class="project-name">
