@@ -173,25 +173,25 @@ form.addEventListener('submit', (e) => {
 });
 
 /* Local Storage */
-const fullName = form.elements.name;
-const emailAddress = form.elements.email;
-const userMessage = form.elements.text;
+const userName = form.elements.name;
+const userEmail = form.elements.email;
+const userText = form.elements.text;
 
 const storedData = JSON.parse(localStorage.getItem('formData'));
 if (storedData) {
-  fullName.value = storedData.name;
-  emailAddress.value = storedData.email;
-  userMessage.value = storedData.usermessage;
+  userName.value = storedData.name;
+  userEmail.value = storedData.email;
+  userText.value = storedData.userText;
 }
 
 function saveData() {
   const formData = {
-    name: fullName.value,
-    email: emailAddress.value,
-    usermessage: userMessage.value,
+    name: userName.value,
+    email: userEmail.value,
+    userText: userText.value,
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 }
-fullName.addEventListener('input', saveData);
-emailAddress.addEventListener('input', saveData);
-userMessage.addEventListener('input', saveData);
+userName.addEventListener('input', saveData);
+userEmail.addEventListener('input', saveData);
+userText.addEventListener('input', saveData);
