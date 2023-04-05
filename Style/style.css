@@ -22,7 +22,6 @@ html {
   justify-content: space-around;
   width: 100%;
   gap: 199px;
-  border: 1px solid red;
 }
 
 #welcome {
@@ -179,7 +178,6 @@ html {
   background-image: url("../Style/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid green;
 }
 
 .primary {
@@ -290,7 +288,6 @@ html {
   align-items: center;
   width: 100%;
   padding-top: 4em;
-  border: 1px solid blue;
 }
 
 .maintxt {
@@ -688,6 +685,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 85rem;
   }
 
   .maintxt {
@@ -697,7 +695,12 @@ html {
   }
 
   #grid-boxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 5rem;
     justify-items: center;
+    align-items: center;
   }
 }
 
@@ -711,7 +714,6 @@ html {
     url("../Style/about-me/About-me-mobile2.svg");
   background-repeat: no-repeat;
   background-position: top 21rem left, top right;
-  border: 1px solid yellow;
 }
 
 #aboutmetxt {
@@ -924,6 +926,7 @@ html {
       url("../Style/about-me/ilustracion-2.svg");
     background-repeat: no-repeat;
     background-position: top 12rem left, top right;
+    height: 50rem;
   }
 
   #aboutmetxt {
@@ -949,12 +952,11 @@ html {
 
   #grid-about {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-    padding: 20px 0px 20px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-top: 5rem;
   }
 }
 
@@ -969,7 +971,6 @@ html {
   background-image: url("../Style/Forms/background-form.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
-  border: 1px solid orange;
 }
 
 #form-main-text {
@@ -1143,14 +1144,32 @@ html {
 
   .name-field {
     width: 85%;
+    transition: none;
+  }
+
+  .name-field:hover {
+    width: 85%;
+    border-color: var(--sColor);
   }
 
   .email-field {
     width: 85%;
+    transition: none;
+  }
+
+  .email-field:hover {
+    width: 85%;
+    border-color: var(--sColor);
   }
 
   .text-field {
     width: 85%;
+    transition: none;
+  }
+
+  .text-field:hover {
+    width: 85%;
+    border-color: var(--sColor);
   }
 
   #social-cont-form {
